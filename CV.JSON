@@ -1,0 +1,9 @@
+{   "Informacion Personal": {
+        "nombre" : "Timoteo",
+        "apellido" : "Rivelli",
+        "edad" : 26,
+        "Nacionalidad" : "Argentino",
+        "Fecha de nacimiento" : "27/03/1997",
+        "localidad": "Mar del Plata",
+        "domicilio" : "Calle 15 nº 1524" }
+}

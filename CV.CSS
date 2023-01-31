@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik:wght@300;400;600&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Rubik";
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor_header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top:0%;
+    left: 0%;
+    z-index: 99;    
+}
+.contenedor_header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 15px 20px;
+}
+.contenedor_header header .logo a{
+    font-size: 36px;
+    color: aquamarine;
+    text-decoration: none;
+}
+.contenedor_header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor_header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.contenedor_header header nav ul li a:hover{
+    color: aquamarine;
+}
+.nav_responsive{
+    background-color: aquamarine;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/**nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 180px;
+}*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8),rgba(30,35,38,1)),
+    url(FONDOPANTALLA.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.inicio #FOTOPERFIL {
+    margin: 100px;
+    width: 320px;
+    height: 340px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    border: 1px solid aquamarine;
+    border-style:inset
+}   
+.inicio .contenido_banner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido_banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: "fredoka one";
+    color: aquamarine;
+}
+.inicio .contenido_banner h2{
+    font-size: 15x;
+    font-weight: normal;
+    font-family: "fredoka one";
+}
+.inicio .contenido_banner .redes a{
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 20px;
+    font-size: 25px;
+    transition: .3s;
+}
+.inicio .contenido_banner .redes a :hover{
+    background-color:aquamarine;
+    border-radius: 100%;
+}
+.sobremi{
+    background: #1e2326;
+    color: white;
+    padding: 50px 30px;
+}
+.sobermi .contenido_seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: "rubik";
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido_seccion p{
+    font: 18;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido_seccion p span{
+    color: aquamarine;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display:flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: "rubik";
+    margin-bottom: 20px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: aquamarine;
+    width: 150px;
+}
+.sobremi .fila .col h4{
+    font-size: 28px;
+    font-family: "rubik";
+    margin-bottom: 20px;
+}
+.contacto{
+    background: linear-gradient(to top, rgba(30,35,38,.8),rgba(30,35,38,1)),
+    url(FONDOCONTACTO.jpg);
+    background-size: cover;
+    background-color: #1e2326;
+    color: white; 
+    padding: 50px 0;
+}
+.contacto .contenido_seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: "rubik";
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display:flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: white;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: trasparent;
+    border: 2px solid white;
+    width: fit-content;
+    display:block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color:#1e2326;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aquamarine;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+ width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252a2e;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul il i{
+    color: aquamarine;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252a2e;
+    color: white;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav_responsive{
+        display: block;
+    }
+    nav.responsive{
+        display:block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid white;
+        padding: 10px;
+        
+    }
+    .inicio {
+        display: block;
+    } 
+    .inicio .contenido_banner {
+        display: block;
+        position: absolute;
+        top: 350px;
+        width: 600px;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width:fit-content;
+    }
+    .contacto .fila {
+        display: block;
+    }
+    .contacto .fila .col {
+        width: 100%;
+    }
+}
+
+
+/**.ERA OTRA POSIBLE POSICION inicio #FOTOPERFIL {
+    margin-top: 100px;
+    border: 10px solid aquamarine;
+    display: block;
+    width: 20%;
+    margin:auto;
+    border-radius: 100%;
+}*/
+
+
+
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Curriculum Vitae AP 4.0 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CV.CSS">
+</head>
+<body>
+    <div class="contenedor_header">
+        <header>
+            <div class="logo">
+                <a href="https://www.instagram.com/teorivelli/?hl=es-la">Timoteo</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav> 
+            <div class="nav_responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <img id="FOTOPERFIL" src="FOTO perfil.jpg" alt="Foto de perfil" >
+        <div class="contenido_banner">
+            <h1>TIMOTEO RIVELLI</h1>
+            <H2>Estudiante de Programación - Traine</H2>
+            <div class="redes">
+                <a href="https://www.facebook.com/timoteo.rivelli/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/teorivelli/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/RivelliTeo"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="sobremi" class="sobremi"> 
+        <div class="contenido_seccion">
+            <h2> SOBRE MI</h2>
+            <p><span>Hola soy Timoteo!.</span> Soy una persona que posee demasiada disciplina, siendo este mi mayor virtud y mi mayor defecto.
+                Me gusta aprender en todo momento, tanto de los aciertos como de los errores. Observar y analizar las situaciones es una de mis tantas virtudes. Soy proactivo a la hora de trabajar, compañerismo y muy comunicativo
+            </p>
+            <div class="fila">
+                <div class="col">
+                    <h3> DATOS PERSONALES:</h3>
+                    <UL>
+                        <li>
+                            <strong>Nombre y Apellido:</strong>
+                            Timoteo Rievlli
+                        </li>
+                        <li>
+                            <strong>Nacionalidad:</strong>
+                            Argentina
+                        </li>
+                        <li>
+                            <strong>Edad:</strong>
+                            25
+                        </li>
+                        <li>
+                            <strong>Fecha de Nacimiento:</strong>
+                            27/03/1997
+                        </li>
+                        <li>
+                            <strong>Localidad:</strong>
+                            Miramar, Buenos Aires, Argentina.
+                        </li>
+                        <li>
+                            <strong>Tel: </strong>
+                            (2291)-463668
+                        </li>
+                        <li>
+                            <strong>Email: </strong>
+                            Timo.Rivelli28@gmail.com
+                        </li>
+                        
+                    </UL>
+                </div>
+                <div class="col">
+                    <h3> ESTUDIOS:   </h3>
+                        <ul>
+                            <li>Programacion para principiantes - Primeros Pasos <strong>-Udemy.</strong></li>
+                            <li>Primeros pasos del desarrollo frontend <strong>-Arg. Programa 4.0</strong></li>
+                        </ul>
+                    <h4> IDIOMAS: </h4>
+                        <ul>
+                            <li><strong>INGLES:</strong>INTERMEDIO</li>
+                            <li><strong>ESPAÑOL:</strong> NATIVO </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto">
+        <div class="contenido_contacto">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero Telefonico">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-envelope-dot"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="UBICACION.png" alt="Ubicacion">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-duotone fa-location-dot"></i>
+                                Calle 40 y 23, Miramar, Buenos Aires
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-mobile"></i>
+                                Mi numero: 2291-463668
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: Timo.rivelli28@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/timoteo.rivelli/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/teorivelli/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/RivelliTeo"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p>Mi canción favorita</p>
+        <audio controls autoplay loop id="audio">
+            <source src="musica fondo.mp3" type="audio/mpeg">
+            <source src="musica fondo.ogg" type="audio/ogg">
+        </audio>
+    </footer>
+
+    <script src="CV.JS"></script>
+</body>
+</html>
